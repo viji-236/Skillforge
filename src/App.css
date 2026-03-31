@@ -1,0 +1,184 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+}
+
+/* Container */
+.container {
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+/* Header (Logo + Title) */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* Logo */
+.logo {
+  width: 60px;
+  height: 60px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Logo floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Title */
+.title {
+  font-size: 38px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+/* Subtitle */
+.subtitle {
+  margin-bottom: 30px;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+/* Card */
+.card {
+  background: white;
+  color: #0f172a;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+  width: 70%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+/* Card hover lift */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🌿 RESULT CARD (SOFT GREEN PROFESSIONAL) */
+.result-card {
+  background: #f0fdf4;
+  color: #14532d;
+  border-left: 6px solid #16a34a;
+}
+
+.result-card h2 {
+  color: #166534;
+}
+
+/* Textarea */
+.textarea {
+  width: 90%;
+  height: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 15px 0;
+  font-size: 15px;
+  resize: none;
+}
+
+/* Buttons */
+.btn {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover effect */
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #22c55e;
+}
+
+/* Secondary button */
+.secondary {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f1f5f9;
+  margin: 6px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Result list items */
+.result-card li {
+  background: #dcfce7;
+}
+
+/* Task box */
+.task-box {
+  background: #dcfce7;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  border-left: 5px solid #16a34a;
+}
+
+/* Feedback */
+.feedback {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #16a34a;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Loading animation */
+.loading {
+  color: #38bdf8;
+  font-weight: bold;
+  animation: pulse 1s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
